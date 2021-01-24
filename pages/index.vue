@@ -81,7 +81,7 @@ body,
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 0.6fr repeat(7, 1fr) 0.5fr;
+	grid-template-rows: 40px repeat(7, 1fr) 0.5fr;
 	gap: 0px 0px;
 	grid-template-areas:
 		"header header header header header"
@@ -96,12 +96,11 @@ body,
 	.header {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: 40px;
 		gap: 0px 0px;
-		grid-template-areas:
-			"money . . user user"
-			"money . . user user";
+		grid-template-areas: "money . . user user";
 		grid-area: header;
+		height: 40px;
 		background-color: @primary-color;
 		color: white;
 	}
@@ -139,18 +138,19 @@ body,
 	}
 	.content {
 		grid-area: content;
-		.content-tab {
-			&:first-child {
-				padding-top: 8px;
-			}
-		}
+		// .content-tab {
+		// 	&:first-child {
+		// 		padding-top: 8px;
+		// 	}
+		// }
 	}
 	.footer {
 		grid-area: footer;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 8pt;
+		font-size: 10px;
+		color: grey;
 	}
 	.ant-menu-horizontal {
 		line-height: 32px;

@@ -8,7 +8,7 @@
 .ant-tabs-tabpane-active {
 	padding: 0 1rem 1rem 1rem;
 }
-.ant-tabs-bar {
+/* .ant-tabs-bar {
 	margin: 0;
-}
+} */
 </style>
